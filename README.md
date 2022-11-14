@@ -16,6 +16,6 @@ npm run start
 
 3. Fluxo:
 
-- Primeiramente é necessário autenticar-se, através da request ```Auth```, feito isso, basta copiar o token recebido, e passar no header ```Authorization``` das demais requests.
+- Primeiramente é necessário autenticar-se, através da request ```Auth```, feito isso, basta copiar o token recebido, e passar no header ```Authorization``` das demais requests, Ex: ```Bearer...```.
 - Exemplos de payloads e ids, estão todos na collection importada.
-- Software utilizado [postman](https://www.postman.com/)
+- Software utilizado para efetuar as chamadas [postman](https://www.postman.com/)
