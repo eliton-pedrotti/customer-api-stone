@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "a6ecea23-b6e0-4394-9fbb-4c82c506e5b4",
+		"name": "Customer API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"teste@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Customer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIyTGYtamFReXZmQTNCN3dpVHZ3VkxhMjV1cHhiXzUtQXhZSDhmY3kySHhVIn0.eyJleHAiOjE2Njg0MzQ2OTUsImlhdCI6MTY2ODQzNDM5NSwianRpIjoiYjBlNmJjMTItNDM3Zi00ODc3LWI3MDgtMWY5MmZhMjU5OGU1IiwiaXNzIjoiaHR0cHM6Ly9hY2NvdW50cy5zZWd1cm9zLnZpdHRhLmNvbS5ici9hdXRoL3JlYWxtcy9jYXJlZXJzIiwic3ViIjoiNzk0ZmFkNjktMzkxNy00OThmLThhNjUtMWVjZGU5NjlmMGRiIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiY3VzdG9tZXJzIiwiYWNyIjoiMSIsInJlc291cmNlX2FjY2VzcyI6eyJjdXN0b21lcnMiOnsicm9sZXMiOlsidXNlciJdfX0sInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJjbGllbnRJZCI6ImN1c3RvbWVycyIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiY2xpZW50SG9zdCI6IjEwLjUwLjEuMTU2IiwicHJlZmVycmVkX3VzZXJuYW1lIjoic2VydmljZS1hY2NvdW50LWN1c3RvbWVycyIsImNsaWVudEFkZHJlc3MiOiIxMC41MC4xLjE1NiJ9.IdanLbjUCAnMOuVF2oRbP24GRFevm7Gd6p5cRCH4inMCHbxdgILO7TP9HQpwVVYxNM4KUvNclrvCEQRG5T8QBLdGO2iaKhPLRU8VW6tDp4Uq0e2dIUZrk4Y9L0-wpc4SNohhtZNX5X_4fFO1GNieDfUzXJuXwBHDiIZ1bqBH-yT1DxidU1S-mEsWPhWL9deAJyC4LDr-OCEEMNWaIPmo-l8XfWOCvABF0gMHxL4aycB8oaePEe-DByEc2ovuVcK7DX8-qRvwZl-57Vy6vOFQcJju8GZZ9s1h6yyRwg49yx3duplf1nKHovJEc8UpjwkkA4h8PVgq8uiPyd4Q-zlIHw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"document\": \"03768181073\",\n    \"name\": \"Mercado Coma Bem LTDA\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Customer",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIyTGYtamFReXZmQTNCN3dpVHZ3VkxhMjV1cHhiXzUtQXhZSDhmY3kySHhVIn0.eyJleHAiOjE2NjgzNzg0NjUsImlhdCI6MTY2ODM3ODE2NSwianRpIjoiMjliYmQ5Y2UtMTAyOC00OGY4LWEzZTMtYjJhOTFjODY5ODY1IiwiaXNzIjoiaHR0cHM6Ly9hY2NvdW50cy5zZWd1cm9zLnZpdHRhLmNvbS5ici9hdXRoL3JlYWxtcy9jYXJlZXJzIiwic3ViIjoiNzk0ZmFkNjktMzkxNy00OThmLThhNjUtMWVjZGU5NjlmMGRiIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiY3VzdG9tZXJzIiwiYWNyIjoiMSIsInJlc291cmNlX2FjY2VzcyI6eyJjdXN0b21lcnMiOnsicm9sZXMiOlsidXNlciJdfX0sInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJjbGllbnRJZCI6ImN1c3RvbWVycyIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiY2xpZW50SG9zdCI6IjEwLjUwLjEuMTU2IiwicHJlZmVycmVkX3VzZXJuYW1lIjoic2VydmljZS1hY2NvdW50LWN1c3RvbWVycyIsImNsaWVudEFkZHJlc3MiOiIxMC41MC4xLjE1NiJ9.Wy66nOcVnypo-lpNBcdr5ldGxX0AmoIhaOr-yUlZyPjOEy1mExR6YPy16VPv0fG2NZy4FKiPBAkJI6d6UsNUECbAYztINlcxMwtUhCeDBEHjc6Gii8og9qeLAG5TCAl_nTJe766I8TLAvrUU7zDZ2z5xyN8d3QSlWUNiVV5y4PRcSH2L_A2eje33WSVRquVAQcNP_89eTuq_wy8ihQWJqu0DNUT1mPzkPk5LoQkVVNYB-1r6KoxBYHE5Mgv-U12-5AP3VkvCr1pq2yxcHm2bi97MdcMxLRh0S283TK0ixAN-C5Vgc6vqGrVCYcCyBmRrlRqrDe4neh7um88GfG9Mwg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/customer/1861394a-904c-4cc7-8cdc-45560d4c0353",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"customer",
+						"1861394a-904c-4cc7-8cdc-45560d4c0353"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Customer",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIyTGYtamFReXZmQTNCN3dpVHZ3VkxhMjV1cHhiXzUtQXhZSDhmY3kySHhVIn0.eyJleHAiOjE2NjgzNzg0NjUsImlhdCI6MTY2ODM3ODE2NSwianRpIjoiMjliYmQ5Y2UtMTAyOC00OGY4LWEzZTMtYjJhOTFjODY5ODY1IiwiaXNzIjoiaHR0cHM6Ly9hY2NvdW50cy5zZWd1cm9zLnZpdHRhLmNvbS5ici9hdXRoL3JlYWxtcy9jYXJlZXJzIiwic3ViIjoiNzk0ZmFkNjktMzkxNy00OThmLThhNjUtMWVjZGU5NjlmMGRiIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiY3VzdG9tZXJzIiwiYWNyIjoiMSIsInJlc291cmNlX2FjY2VzcyI6eyJjdXN0b21lcnMiOnsicm9sZXMiOlsidXNlciJdfX0sInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJjbGllbnRJZCI6ImN1c3RvbWVycyIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiY2xpZW50SG9zdCI6IjEwLjUwLjEuMTU2IiwicHJlZmVycmVkX3VzZXJuYW1lIjoic2VydmljZS1hY2NvdW50LWN1c3RvbWVycyIsImNsaWVudEFkZHJlc3MiOiIxMC41MC4xLjE1NiJ9.Wy66nOcVnypo-lpNBcdr5ldGxX0AmoIhaOr-yUlZyPjOEy1mExR6YPy16VPv0fG2NZy4FKiPBAkJI6d6UsNUECbAYztINlcxMwtUhCeDBEHjc6Gii8og9qeLAG5TCAl_nTJe766I8TLAvrUU7zDZ2z5xyN8d3QSlWUNiVV5y4PRcSH2L_A2eje33WSVRquVAQcNP_89eTuq_wy8ihQWJqu0DNUT1mPzkPk5LoQkVVNYB-1r6KoxBYHE5Mgv-U12-5AP3VkvCr1pq2yxcHm2bi97MdcMxLRh0S283TK0ixAN-C5Vgc6vqGrVCYcCyBmRrlRqrDe4neh7um88GfG9Mwg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"document\": \"03768181073\",\n    \"name\": \"Mercado Coma Bem LTDA Atualizado 2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/customer/ca67be46-a3ea-4047-9e2a-ebc10f830cfa8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"customer",
+						"ca67be46-a3ea-4047-9e2a-ebc10f830cfa8"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

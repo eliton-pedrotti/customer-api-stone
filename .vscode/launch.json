@@ -1,0 +1,30 @@
+{
+    "version":"0.2.0",
+    "configurations":[
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Jest All",
+        "runtimeExecutable": "npm",
+        "runtimeArgs": [
+          "run",
+          "jest",
+        ],
+        "console": "integratedTerminal",
+        "internalConsoleOptions": "neverOpen",
+      },
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Jest Current File",
+        "runtimeExecutable": "npm",
+        "runtimeArgs": [
+          "run",
+          "test",
+          "${fileDirname}/${fileBasenameNoExtension}"
+        ],
+        "console": "integratedTerminal",
+        "internalConsoleOptions": "neverOpen",
+      }
+    ]
+  }
